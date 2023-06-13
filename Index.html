@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Projeto da aula C78
+        </title>
+    </head>
+    <center>
+        <h1>Meu álbum de família</h1>
+    <img src="dia-internacional-do-design-plano-do-conceito-de-familias_23-2148492790 (1).avif" style="width: 30%;" id="familia-feliz-desenho">
+    <h4 id="familia-feliz-nome"></h4>
+    <button onclick="update();">Próximo</button>
+</center>
+<script>
+    var images=["dia-internacional-do-design-plano-do-conceito-de-familias_23-2148492790 (1).avif" , "5812-papel-pai.png", "caricatura-irmã-irmão-afroamerican-desenho_csp713167900 (1).webp" , "images.jpg"];
+    var names=["Álbum de familia", "Rodrigo Silva", "Diego Silva","Roberto Silva", "Aline Silva", "Sonia Silva"];
+    var i=0;
+    function update()
+    {
+        i++;
+        var numbersOfFamiyMemberInArray=5
+        if(i > numbersOfFamiyMemberInArray )
+        {
+            i = 0;
+        }
+    }
+    var updatedImage = images[1]
+    var updatedName = names[1]
+    document.getElementById("familia-feliz-desenho").src = updatedImage
+    document.getElementById("familia-feliz-nome").innerHTML = updatedName
+</script>
+</html>
